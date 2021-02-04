@@ -5,6 +5,7 @@ const knex = require('knex');
 const bcrypt = require('bcrypt-nodejs');
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors())
 
@@ -73,7 +74,6 @@ app.post('/register',(req,res)=>{
 						res.json(user[0]);
 					})
 	 		})
-	 		.catch(err => res.json(err))
 	 		.then(trx.commit)
 	 		.catch(trx.rollback)
 	 })
