@@ -11,7 +11,7 @@ app.use(cors())
 
 
 var corsOptions = {
-  origin: 'https://blooming-taiga-94774.herokuapp.com',
+  origin: 'https://nameless-sierra-79147.herokuapp.com',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
