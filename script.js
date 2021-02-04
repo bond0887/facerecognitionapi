@@ -11,7 +11,7 @@ app.use(cors())
 
 
 var corsOptions = {
-  origin: 'https://lit-ocean-96596.herokuapp.com',
+  origin: 'https://blooming-taiga-94774.herokuapp.com',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
@@ -20,7 +20,7 @@ const db = knex({
 	client: 'pg',
 	connection:{
 		connectionString:process.env.DATABASE_URL,
-		ssl: {process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"}
+		ssl: {	process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"}
 	}
 });
 
