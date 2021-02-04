@@ -73,6 +73,7 @@ app.post('/register',(req,res)=>{
 						res.json(user[0]);
 					})
 	 		})
+	 		.catch(err => res.json(err))
 	 		.then(trx.commit)
 	 		.catch(trx.rollback)
 	 })
