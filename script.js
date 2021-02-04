@@ -10,7 +10,7 @@ app.use(cors())
 
 
 var corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://lit-ocean-96596.herokuapp.com',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
