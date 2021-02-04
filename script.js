@@ -24,7 +24,7 @@ const db = knex({
 });
 
 app.get('/',(req,res)=>{
-	res.json('it is working');
+	res.json('it is working')
 })
 
 
