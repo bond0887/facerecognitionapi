@@ -20,12 +20,12 @@ const db = knex({
 	client: 'pg',
 	connection:{
 		connectionString:process.env.DATABASE_URL,
-		//ssl: false
+		ssl: false
 	}
 });
 
 app.get('/',(req,res)=>{
-	res.json('it is working')
+	res.json(process.env.DATABASE_URL)
 })
 
 
